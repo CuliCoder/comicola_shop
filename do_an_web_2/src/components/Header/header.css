@@ -1,0 +1,32 @@
+.modal-products {
+  display: none;
+}
+.navbar-item:nth-child(2):hover .modal-products {
+  display: flex;
+}
+
+.navbar-item:hover {
+  color: #fd6e4f;
+  cursor: pointer;
+}
+.navbar-item:hover > div {
+  cursor: initial;
+  color: initial;
+}
+
+.enable {
+  opacity: 1;
+}
+
+.disable {
+  opacity: 0;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+input:focus {
+  box-shadow: none;
+  outline: none !important;
+}

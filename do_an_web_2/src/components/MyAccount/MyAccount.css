@@ -1,0 +1,59 @@
+.my-account {
+  display: grid;
+  grid-template-columns: 200px auto;
+}
+.radio-address {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  border: solid 1px #e0e0e0;
+  padding: 20px;
+  max-width: 500px;
+  min-width: 500px;
+}
+.radio-address>div{
+  max-width: 400px;
+  min-width: 400px;
+}
+.container-rdo-address {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  user-select: none;
+  cursor: pointer;
+}
+.container-rdo-address * {
+  cursor: pointer;
+}
+.container-rdo-address .rdo-address-btn {
+  cursor:auto;
+}
+.rdo-address-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.container-rdo-address button {
+  user-select: none;
+}
+
+.container-rdo-address input:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  user-select: none;
+}
+
+.container-rdo-address .selected {
+  border: solid 1px #f44336;
+}
+
+.container-address {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  overflow-y: auto;
+  max-height: 500px;
+  gap:20px
+}

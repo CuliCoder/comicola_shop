@@ -1,0 +1,100 @@
+.product-item:hover img {
+  transform: scale(1.1, 1.1);
+  transition-duration: 0.4s;
+}
+
+.product-item > div {
+  overflow: hidden;
+}
+
+@keyframes displayAddCart {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.product-item button {
+  display: none;
+}
+
+.product-item:hover .name {
+  visibility: hidden;
+}
+
+.product-item:hover button {
+  animation-name: displayAddCart;
+  display: flex;
+  animation-duration: 0.3s;
+}
+
+.qc-heading::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 200px;
+  background: white;
+  margin: 4px auto;
+}
+
+@keyframes pushImage {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-96px);
+  }
+}
+
+.pushImg:hover img {
+  animation: pushImage 0.4s forwards ease-in-out;
+}
+
+.pushImg:hover .desc {
+  animation: pushImage 0.4s forwards ease-in-out;
+}
+
+@keyframes bannerAnimate {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes displayModal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes dropText {
+  from {
+    transform: translateY(-60px);
+    opacity: 0.2;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.banner div.relative:hover img {
+  animation: bannerAnimate 0.7s forwards;
+}
+
+.banner div.relative:hover div {
+  animation: displayModal 0.7s forwards;
+}
+
+.banner div.relative:hover div p {
+  animation: dropText 0.7s forwards;
+}
